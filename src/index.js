@@ -1,20 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import App from "./App/App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@material-ui/core/styles";
+
+import App from "./App/App";
 
 import { theme } from "./theme";
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <Router>
-        <Switch>
-          <Route exact component={App} path={"/"} />
-        </Switch>
-      </Router>
+      <App />
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")

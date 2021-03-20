@@ -6,14 +6,16 @@ import {
   Hidden,
   List,
   ListItem,
-  ListItemText,
+  Divider,
 } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
-
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import Profile from "./Profile/Profile";
+import Navigation from "./Navigation/Navigation";
 
 const StyledBox = styled(Box)`
-  width: 240px;
+  width: 280px;
 
   @media (min-width: 960px) {
     margin-top: 64px;
@@ -21,31 +23,21 @@ const StyledBox = styled(Box)`
 `;
 
 const SideDrawerBox = styled(Box)`
-  width: 240px;
-  flex-shrink: 0;
-  height: 100vh;
+  @media (min-width: 960px) {
+    width: 280px;
+    flex-shrink: 0;
+    height: 100vh;
+  }
 `;
 
 function SideDrawer(props) {
-  const dummyCategories = [
-    "Hokusai sss",
-    "Hiroshige",
-    "Utamaro",
-    "Kuniyoshi",
-    "Yoshitoshi",
-  ];
-
   const theme = useTheme();
 
   const drawer = (
     <StyledBox>
-      <List>
-        {dummyCategories.map((text) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
+      <Profile />
+      <Divider />
+      <Navigation />
     </StyledBox>
   );
   return (
