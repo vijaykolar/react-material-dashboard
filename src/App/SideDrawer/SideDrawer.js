@@ -1,15 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  Drawer,
-  Box,
-  Hidden,
-  List,
-  ListItem,
-  Divider,
-} from "@material-ui/core";
+import { Drawer, Box, Hidden, Divider } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import Profile from "./Profile/Profile";
 import Navigation from "./Navigation/Navigation";
