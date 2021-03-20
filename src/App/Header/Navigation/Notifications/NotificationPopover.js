@@ -54,7 +54,7 @@ const NotificationPopover = (props) => {
         horizontal: "center",
       }}
       transformOrigin={{
-        vertical: "bottom ",
+        vertical: "bottom",
         horizontal: "center",
       }}
     >
