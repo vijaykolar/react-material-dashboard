@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Drawer, Box, Hidden, List, ListItem } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledBox = styled(Box)`
@@ -28,10 +28,14 @@ function SideDrawer(props) {
     <StyledBox>
       <List>
         <ListItem>
-          <Link to="/">Overview</Link>
+          <NavLink exact to="/">
+            Overview
+          </NavLink>
         </ListItem>
         <ListItem>
-          <Link to="/analytics">Analytics</Link>
+          <NavLink exact to="/analytics">
+            Analytics
+          </NavLink>
         </ListItem>
       </List>
     </StyledBox>

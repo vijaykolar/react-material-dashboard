@@ -12,6 +12,14 @@ const Main = styled.main`
   display: flex;
 `;
 
+const Content = styled.div`
+  padding: 48px 0;
+  flex-grow: 1;
+  @media (min-width: 960px) {
+    padding: 60px 0;
+  }
+`;
+
 const App = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   function handleDrawerToggle() {
@@ -27,10 +35,12 @@ const App = () => {
             mobileOpen={mobileOpen}
             handleDrawerToggle={handleDrawerToggle}
           />
-          <Switch>
-            <Route exact path={"/"} component={Overview} />
-            <Route exact component={Analytics} path={"/analytics"} />
-          </Switch>
+          <Content>
+            <Switch>
+              <Route exact path={"/"} component={Overview} />
+              <Route exact component={Analytics} path={"/analytics"} />
+            </Switch>
+          </Content>
         </Main>
       </Router>
     </>
