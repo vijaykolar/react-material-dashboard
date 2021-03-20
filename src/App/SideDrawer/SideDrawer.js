@@ -1,15 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  Drawer,
-  Box,
-  Hidden,
-  List,
-  ListItem,
-  ListItemText,
-} from "@material-ui/core";
+import { Drawer, Box, Hidden, List, ListItem } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
-
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledBox = styled(Box)`
@@ -21,30 +14,25 @@ const StyledBox = styled(Box)`
 `;
 
 const SideDrawerBox = styled(Box)`
-  width: 240px;
-  flex-shrink: 0;
-  height: 100vh;
+  @media (min-width: 960px) {
+    width: 240px;
+    flex-shrink: 0;
+    height: 100vh;
+  }
 `;
 
 function SideDrawer(props) {
-  const dummyCategories = [
-    "Hokusai sss",
-    "Hiroshige",
-    "Utamaro",
-    "Kuniyoshi",
-    "Yoshitoshi",
-  ];
-
   const theme = useTheme();
 
   const drawer = (
     <StyledBox>
       <List>
-        {dummyCategories.map((text) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <ListItem>
+          <Link to="/">Overview</Link>
+        </ListItem>
+        <ListItem>
+          <Link to="/analytics">Analytics</Link>
+        </ListItem>
       </List>
     </StyledBox>
   );
