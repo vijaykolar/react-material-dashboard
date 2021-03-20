@@ -201,6 +201,7 @@ export const theme = createMuiTheme({
       fontWeight: 400,
       fontSize: "1rem",
       lineHeight: 1.5,
+      color: "rgb(23, 43, 77)",
     },
     body2: {
       fontFamily:
