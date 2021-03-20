@@ -224,6 +224,7 @@ export const theme = createMuiTheme({
       fontWeight: 400,
       fontSize: "0.75rem",
       lineHeight: 1.66,
+      color: "rgb(107, 119, 140)",
     },
     overline: {
       fontFamily:
