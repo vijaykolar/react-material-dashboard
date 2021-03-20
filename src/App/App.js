@@ -7,6 +7,8 @@ import Header from "./Header/Header";
 import SideDrawer from "./SideDrawer/SideDrawer";
 import Overview from "./Overview/pages/Overview";
 import Analytics from "./Analytics/pages/Analytics";
+import Finance from "./Finance/pages/Finance";
+import Account from "./Account/pages/Account";
 
 const Main = styled.main`
   display: flex;
@@ -38,7 +40,9 @@ const App = () => {
           <Content>
             <Switch>
               <Route exact path={"/"} component={Overview} />
-              <Route exact component={Analytics} path={"/analytics"} />
+              <Route exact component={Analytics} path="/analytics" />
+              <Route exact component={Finance} path={"/finance"} />
+              <Route exact component={Account} path={"/account"} />
             </Switch>
           </Content>
         </Main>

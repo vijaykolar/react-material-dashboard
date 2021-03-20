@@ -1,12 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Drawer, Box, Hidden, List, ListItem } from "@material-ui/core";
+import {
+  Drawer,
+  Box,
+  Hidden,
+  List,
+  ListItem,
+  Divider,
+} from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import Profile from "./Profile/Profile";
+import Navigation from "./Navigation/Navigation";
 
 const StyledBox = styled(Box)`
-  width: 240px;
+  width: 280px;
 
   @media (min-width: 960px) {
     margin-top: 64px;
@@ -15,7 +24,7 @@ const StyledBox = styled(Box)`
 
 const SideDrawerBox = styled(Box)`
   @media (min-width: 960px) {
-    width: 240px;
+    width: 280px;
     flex-shrink: 0;
     height: 100vh;
   }
@@ -26,18 +35,9 @@ function SideDrawer(props) {
 
   const drawer = (
     <StyledBox>
-      <List>
-        <ListItem>
-          <NavLink exact to="/">
-            Overview
-          </NavLink>
-        </ListItem>
-        <ListItem>
-          <NavLink exact to="/analytics">
-            Analytics
-          </NavLink>
-        </ListItem>
-      </List>
+      <Profile />
+      <Divider />
+      <Navigation />
     </StyledBox>
   );
   return (
