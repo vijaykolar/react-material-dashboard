@@ -14,7 +14,7 @@ const StyledBox = styled(Box)`
   }
 `;
 
-const SideDrawerBox = styled(Box)`
+const SideDrawerBox = styled.aside`
   @media (min-width: 960px) {
     width: 280px;
     flex-shrink: 0;

@@ -14,11 +14,11 @@ const Main = styled.main`
   display: flex;
 `;
 
-const Content = styled.div`
-  padding: 48px 0;
+const Content = styled.section`
+  padding: 75px 16px 50px;
   flex-grow: 1;
   @media (min-width: 960px) {
-    padding: 60px 0;
+    padding: 100px 24px 60px;
   }
 `;
 
