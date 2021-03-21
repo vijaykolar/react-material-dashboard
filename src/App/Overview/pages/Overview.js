@@ -1,8 +1,14 @@
 import React from "react";
-import { Box } from "@material-ui/core";
+import OverViewInfo from "../components/OverViewInfo";
+import StatsCard from "../components/StatsCard/StatsCard";
 
 const Overview = () => {
-  return <Box>Overview</Box>;
+  return (
+    <>
+      <OverViewInfo />
+      <StatsCard />
+    </>
+  );
 };
 
 export default Overview;
