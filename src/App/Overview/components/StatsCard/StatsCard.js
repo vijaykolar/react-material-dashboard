@@ -1,7 +1,19 @@
 import React from "react";
-import { Box, Grid, Paper, Typography, Avatar } from "@material-ui/core";
+import {
+  Box,
+  Grid,
+  Paper,
+  Typography,
+  Avatar,
+  Divider,
+  Button,
+} from "@material-ui/core";
 import styled from "styled-components";
-import { MdArrowDropDown, MdArrowDropUp } from "react-icons/all";
+import {
+  MdArrowDropDown,
+  MdArrowDropUp,
+  MdArrowForward,
+} from "react-icons/all";
 import RadialProgress from "./RadialProgress";
 
 const FlexBox = styled(Box)`
@@ -44,6 +56,14 @@ const ContentBox = styled(Box)`
   align-items: center;
 `;
 
+const ButtonBox = styled(Box)`
+  padding: 8px;
+
+  button {
+    text-transform: initial;
+  }
+`;
+
 const StatsCard = () => {
   return (
     <Grid container spacing={3} alignItems="center" justify="space-between">
@@ -69,6 +89,12 @@ const StatsCard = () => {
               </StyledAvatar>
             </ContentBox>
           </FlexBox>
+          <Divider />
+          <ButtonBox>
+            <Button color="primary" endIcon={<MdArrowForward />}>
+              See all activity
+            </Button>
+          </ButtonBox>
         </Paper>
       </Grid>
 
@@ -92,6 +118,12 @@ const StatsCard = () => {
               </StyledAvatar>
             </ContentBox>
           </FlexBox>
+          <Divider />
+          <ButtonBox>
+            <Button color="primary" endIcon={<MdArrowForward />}>
+              Withdraw money
+            </Button>
+          </ButtonBox>
         </Paper>
       </Grid>
     </Grid>
