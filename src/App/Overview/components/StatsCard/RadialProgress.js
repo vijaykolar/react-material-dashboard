@@ -10,8 +10,7 @@ const options = {
     radialBar: {
       hollow: {
         margin: 10,
-        size: "70%",
-        imageWidth: 150,
+        size: "55%",
       },
       dataLabels: {
         show: false,
@@ -32,7 +31,7 @@ const RadialProgress = () => {
         options={options}
         series={[85]}
         type="radialBar"
-        height={150}
+        height={160}
       />
     </div>
   );
