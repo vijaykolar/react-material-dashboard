@@ -1,27 +1,27 @@
 import React from "react";
-import { Box, Grid, Paper } from "@material-ui/core";
-import styled from "styled-components";
+import { Box, Grid, Paper, Typography } from "@material-ui/core";
 
-const Mt16 = styled(Box)`
-  margin-top: 16px;
-
-  @media (min-width: 960px) {
-    margin-top: 0;
-  }
-`;
+import Padding from "../../hoc/Padding";
+import BarChartGrouped from "../../shared/UI/charts/apex-charts/BarChartGrouped";
 
 const BarChart = () => {
   return (
     <Grid container spacing={3} alignItems="center" justify="space-between">
       <Grid item xs={7}>
-        <Paper>
-          <Box>Bar Goes here</Box>
+        <Paper elevation={0} variant="outlined">
+          <Padding>
+            <Box>
+              <Typography variant="h6">Total Transactions</Typography>
+              <Typography variant="body2">Mar 2021</Typography>
+              <BarChartGrouped />
+            </Box>
+          </Padding>
         </Paper>
       </Grid>
 
       <Grid item xs={5}>
-        <Paper>
-          <Mt16>table goes here</Mt16>
+        <Paper elevation={0} variant="outlined">
+          <Padding>table</Padding>
         </Paper>
       </Grid>
     </Grid>
