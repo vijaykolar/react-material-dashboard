@@ -4,7 +4,6 @@ import ReactApexChart from "react-apexcharts";
 const options = {
   chart: {
     type: "bar",
-    height: 350,
     stacked: true,
     toolbar: {
       show: false,
@@ -78,7 +77,7 @@ const BarChartGrouped = () => {
         options={options}
         series={series}
         type="bar"
-        height={350}
+        height={300}
       />
     </div>
   );
