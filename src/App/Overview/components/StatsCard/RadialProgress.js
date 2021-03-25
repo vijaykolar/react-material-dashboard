@@ -10,7 +10,7 @@ const options = {
     radialBar: {
       hollow: {
         margin: 10,
-        size: "55%",
+        size: "60%",
       },
       dataLabels: {
         show: false,
