@@ -1,8 +1,15 @@
 import React from "react";
-import { Box } from "@material-ui/core";
+
+import OverviewInfo from "../components/OverviewInfo";
+import AnalyticCards from "../components/AnalyticCards";
 
 const Analytics = () => {
-  return <Box>Analytics</Box>;
+  return (
+    <>
+      <OverviewInfo />
+      <AnalyticCards />
+    </>
+  );
 };
 
 export default Analytics;
