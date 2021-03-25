@@ -15,7 +15,7 @@ const StyledBox = styled(Box)`
 `;
 
 const SideDrawerBox = styled.aside`
-  @media (min-width: 960px) {
+  @media (min-width: 1280px) {
     width: 280px;
     flex-shrink: 0;
     height: 100vh;
@@ -35,7 +35,7 @@ function SideDrawer(props) {
   return (
     <SideDrawerBox>
       {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-      <Hidden smUp implementation="css">
+      <Hidden lgUp implementation="css">
         <Drawer
           variant="temporary"
           anchor={theme.direction === "rtl" ? "right" : "left"}
@@ -48,7 +48,7 @@ function SideDrawer(props) {
           {drawer}
         </Drawer>
       </Hidden>
-      <Hidden xsDown implementation="css">
+      <Hidden mdDown implementation="css">
         <Drawer variant="permanent"> {drawer}</Drawer>
       </Hidden>
     </SideDrawerBox>

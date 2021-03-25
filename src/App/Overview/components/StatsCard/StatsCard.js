@@ -15,13 +15,12 @@ import {
   MdArrowForward,
 } from "react-icons/all";
 import RadialProgress from "./RadialProgress";
+import Padding from "../../../hoc/Padding";
 
 const FlexBox = styled(Box)`
-  padding: 16px;
   @media (min-width: 960px) {
     display: flex;
     justify-content: space-between;
-    padding: 24px;
   }
 `;
 
@@ -69,26 +68,28 @@ const StatsCard = () => {
     <Grid container spacing={3} alignItems="center" justify="space-between">
       <Grid item xs={12} md={6}>
         <Paper elevation={0} variant="outlined">
-          <FlexBox>
-            <GraphBox>
-              <ProgressBar>
-                <RadialProgress />
-              </ProgressBar>
-            </GraphBox>
-            <ContentBox>
-              <Box>
-                <Typography variant="h4" color="primary">
-                  0.299 BTC
-                </Typography>
-                <Typography color="textSecondary" variant="subtitle2">
-                  Weekly earnings
-                </Typography>
-              </Box>
-              <StyledAvatar up={true} variant="square">
-                <MdArrowDropDown />
-              </StyledAvatar>
-            </ContentBox>
-          </FlexBox>
+          <Padding>
+            <FlexBox>
+              <GraphBox>
+                <ProgressBar>
+                  <RadialProgress />
+                </ProgressBar>
+              </GraphBox>
+              <ContentBox>
+                <Box>
+                  <Typography variant="h4" color="primary">
+                    0.299 BTC
+                  </Typography>
+                  <Typography color="textSecondary" variant="subtitle2">
+                    Weekly earnings
+                  </Typography>
+                </Box>
+                <StyledAvatar up={true} variant="square">
+                  <MdArrowDropDown />
+                </StyledAvatar>
+              </ContentBox>
+            </FlexBox>
+          </Padding>
           <Divider />
           <ButtonBox>
             <Button color="primary" endIcon={<MdArrowForward />}>
@@ -100,24 +101,27 @@ const StatsCard = () => {
 
       <Grid item xs={12} md={6}>
         <Paper elevation={0} variant="outlined">
-          <FlexBox>
-            <GraphBox>
-              <ProgressBar>
-                <RadialProgress />
-              </ProgressBar>
-            </GraphBox>
-            <ContentBox>
-              <Box>
-                <Typography variant="h4">$2,150,000.00</Typography>
-                <Typography color="textSecondary" variant="subtitle2">
-                  Your private wallet
-                </Typography>
-              </Box>
-              <StyledAvatar up={false} variant="square">
-                <MdArrowDropUp />
-              </StyledAvatar>
-            </ContentBox>
-          </FlexBox>
+          <Padding>
+            <FlexBox>
+              <GraphBox>
+                <ProgressBar>
+                  <RadialProgress />
+                </ProgressBar>
+              </GraphBox>
+              <ContentBox>
+                <Box>
+                  <Typography variant="h4">$2,150,000.00</Typography>
+                  <Typography color="textSecondary" variant="subtitle2">
+                    Your private wallet
+                  </Typography>
+                </Box>
+                <StyledAvatar up={false} variant="square">
+                  <MdArrowDropUp />
+                </StyledAvatar>
+              </ContentBox>
+            </FlexBox>
+          </Padding>
+
           <Divider />
           <ButtonBox>
             <Button color="primary" endIcon={<MdArrowForward />}>

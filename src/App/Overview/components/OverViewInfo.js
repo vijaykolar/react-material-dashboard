@@ -3,13 +3,14 @@ import { Box, Button, Grid, Typography } from "@material-ui/core";
 import { HiPlusSm } from "react-icons/all";
 import styled from "styled-components";
 
-const FlexBox = styled(Box)`
-  @media (min-width: 960px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-`;
+import FlexBox from "../../hoc/FlexBox";
+// const FlexBox = styled(Box)`
+//   @media (min-width: 960px) {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// `;
 
 const Mt16 = styled(Box)`
   margin-top: 16px;
@@ -27,7 +28,7 @@ const OverViewInfo = () => {
           <Box>
             <Typography variant="overline">OVERVIEW</Typography>
             <Typography variant="h5" color="textPrimary">
-              Good Morning, Vijay
+              Wecome back, Vijay
             </Typography>
             <Typography variant="subtitle2" color="textSecondary">
               Here's what's happening with your projects today

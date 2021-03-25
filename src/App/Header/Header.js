@@ -11,7 +11,7 @@ const Div = styled.div`
 `;
 
 const StyledIconButton = styled(IconButton)`
-  @media (min-width: 960px) {
+  @media (min-width: 1280px) {
     display: none;
   }
 `;
