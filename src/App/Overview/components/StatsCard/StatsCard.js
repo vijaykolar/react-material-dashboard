@@ -85,7 +85,7 @@ const StatsCard = () => {
                   </Typography>
                 </Box>
                 <StyledAvatar up={true} variant="square">
-                  <MdArrowDropDown />
+                  <MdArrowDropUp />
                 </StyledAvatar>
               </ContentBox>
             </FlexBox>
@@ -116,7 +116,7 @@ const StatsCard = () => {
                   </Typography>
                 </Box>
                 <StyledAvatar up={false} variant="square">
-                  <MdArrowDropUp />
+                  <MdArrowDropDown />
                 </StyledAvatar>
               </ContentBox>
             </FlexBox>
