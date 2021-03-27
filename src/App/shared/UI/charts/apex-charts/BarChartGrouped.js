@@ -12,6 +12,7 @@ const options = {
       enabled: false,
     },
   },
+  colors: ["#5664d2", "rgb(119, 131, 219)"],
   responsive: [
     {
       breakpoint: 480,
@@ -26,7 +27,7 @@ const options = {
   ],
   plotOptions: {
     bar: {
-      borderRadius: 8,
+      borderRadius: 0,
       horizontal: false,
     },
     dataLabels: {
