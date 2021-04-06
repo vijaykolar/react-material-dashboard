@@ -25,20 +25,20 @@ const Mt16 = styled(Box)`
   }
 `;
 
-const OverviewInfo = () => {
+const OverviewInfo = (props) => {
   return (
     <Grid container spacing={3} alignItems="center" justify="space-between">
       <Grid item xs={12}>
         <FlexBox>
           <Box>
             <Typography variant="h5" color="textPrimary">
-              Analytics
+              {props.title}
             </Typography>
             <Breadcrumbs separator={<MdChevronRight fontSize="large" />}>
               <Link color="textPrimary" component={a} to="/">
                 Dashboard
               </Link>
-              <Typography color="textSecondary">Analytics</Typography>
+              <Typography color="textSecondary">{props.title}</Typography>
             </Breadcrumbs>
           </Box>
           <Mt16>

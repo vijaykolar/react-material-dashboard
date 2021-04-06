@@ -11,7 +11,7 @@ import SocialMediaSources from "../components/SocialMediaSources";
 const Analytics = () => {
   return (
     <>
-      <OverviewInfo />
+      <OverviewInfo title="Analytics" />
       <AnalyticCards />
       <Grid container spacing={3}>
         <Grid item xs={12} md={8}>
