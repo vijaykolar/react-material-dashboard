@@ -4,6 +4,8 @@ import { Box, Grid, Paper, Typography } from "@material-ui/core";
 import Padding from "../../hoc/Padding";
 import styled from "styled-components";
 import LineChart from "../../shared/UI/charts/apex-charts/LineChart";
+import SalesRevenue from "../components/SalesRevenue";
+import CostBreakdown from "../components/CostBreakdown";
 
 const Wrapper = styled.div`
   display: flex;
@@ -80,10 +82,10 @@ const Finance = () => {
 
       <Grid container spacing={3}>
         <Grid item xs={12} md={8}>
-          Sales Revenue
+          <SalesRevenue />
         </Grid>
         <Grid item xs={12} md={4}>
-          Cost Breakdown
+          <CostBreakdown />
         </Grid>
       </Grid>
     </>
