@@ -28,7 +28,7 @@ const OverViewInfo = () => {
           <Box>
             <Typography variant="overline">OVERVIEW</Typography>
             <Typography variant="h5" color="textPrimary">
-              Wecome back, Vijay
+              Wecome back, Jane
             </Typography>
             <Typography variant="subtitle2" color="textSecondary">
               Here's what's happening with your projects today

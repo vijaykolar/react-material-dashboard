@@ -43,7 +43,7 @@ const Profile = () => {
         </Link>
 
         <ProfileText>
-          <Typography variant="subtitle2">Vijay Kolar</Typography>
+          <Typography variant="subtitle2">Jane Doe</Typography>
           <Typography variant="body2">
             Your plan: <TierLink to="/">Premium</TierLink>{" "}
           </Typography>
